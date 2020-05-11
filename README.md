@@ -83,8 +83,8 @@ In this case, I have tweaked the learning rate (a) and both initial and stopping
 	++++++++++++++++++++++++++++++++++++++++++++++++++
 	
 # Code written in Python. 
-To start the execution open main.py file and then excute. You may need the below libraries:
- 1. numpy
- 2. matplotlib
- 3. basemap
+To start the execution open main.py file and then run the program. All py files are required to work.
+You need the below libraries:
+	1. numpy
+	2. matplotlib and basemap
  
