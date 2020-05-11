@@ -26,8 +26,9 @@ Something worth mentioning is that we decrease the temperature at each iteration
 Also, in the case of decreasing the learning rate, one should consider reducing the initial and stopping temperature, as well as stopping iteration, to fine-tune the result.
 
 ## Study cases: 
-In our case I used “Djibouti - 38 Cities” and “Qatar - 194 Cities” from http://www.math.uwaterloo.ca/tsp/world/countries.html
-In both cases, I have repeated the simulated annealing 5 times to produce the best solution by using the same parameters at each repetition. The best solution and fitness generated was:
+In our case I used “Djibouti - 38 Cities” and “Qatar - 194 Cities” from http://www.math.uwaterloo.ca/tsp/world/countries.html.
+
+In both cases, I have repeated the simulated annealing 5 times to produce the best solution by using the same parameters at each repetition. 
 
 ### Djibouti - 38 Cities:
 
