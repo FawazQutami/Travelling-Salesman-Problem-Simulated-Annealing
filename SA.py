@@ -1,8 +1,20 @@
+"""
+-- *********************************************
+-- Author       :	Fawaz Qutami
+-- Create date  :   10th May 2020
+-- Description  :   Metaheuristics
+-- File Name    :   SA.py
+-- *********************************************
+"""
+
+# load Packages
 import math
 import random
-from eHandler import PrintException as EH
 import numpy as np
 import datetime as dt
+
+# load other packages
+from eHandler import PrintException as EH
 
 
 def distanceBetweenCities(coord1, coord2):
