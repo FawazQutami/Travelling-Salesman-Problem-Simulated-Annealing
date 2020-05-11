@@ -1,7 +1,19 @@
+"""
+-- *********************************************
+-- Author       :	Fawaz Qutami
+-- Create date  :   10th May 2020
+-- Description  :   Metaheuristics
+-- File Name    :   SA_Plot.py
+-- *********************************************
+"""
+
+# load Packages
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
-from eHandler import PrintException as EH
 from mpl_toolkits.basemap import Basemap
+
+# load other packages
+from eHandler import PrintException as EH
 
 
 def plotLearning(fitnessList, initFit, bestFit):
