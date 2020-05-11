@@ -56,12 +56,9 @@ The best solution is (6660.8366) KM for the TSP journey with a total execution t
 	 Annealing Execution Time in seconds : 0
 	++++++++++++++++++++++++++++++++++++++++++++++++++
 	
-![“The fitness curves - The convergence curve”](/images/dj_fitnessCurve.png)
-Format: ![Alt Text](url)
+![The fitness curves](/images/dj_fitnessCurve.png)
 
 ![Best Route](/images/dj_routeCurve.png)
-Format: ![Alt Text](url)
-
 
 ### Qatar - 194 Cities:
 In this case, I have tweaked the learning rate (a) and both initial and stopping temperatures, hence the best solution is (9832.537) KM for the TSP journey with a total execution time - for 5 repetitions, equals to 244 seconds.
@@ -88,6 +85,10 @@ In this case, I have tweaked the learning rate (a) and both initial and stopping
 	 Annealing improvement over Greedy   : 14.900%
 	 Annealing Execution Time in seconds : 49
 	++++++++++++++++++++++++++++++++++++++++++++++++++
+
+![The fitness curves](/images/qa_fitnessCurve.png)
+
+![Best Route](/images/qa_routeCurve.png)
 	
 # Code written in Python. 
 To start the execution open main.py file and then run the program.
