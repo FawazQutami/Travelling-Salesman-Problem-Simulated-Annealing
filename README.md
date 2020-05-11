@@ -28,8 +28,8 @@ Also, in the case of decreasing the learning rate, one should consider reducing 
 ## Study cases: 
 In our case I used “Djibouti - 38 Cities” and “Qatar - 194 Cities” from http://www.math.uwaterloo.ca/tsp/world/countries.html
 In both cases, I have repeated the simulated annealing 5 times to produce the best solution by using the same parameters at each repetition. The best solution and fitness generated was:
-	
-	### 1. Djibouti - 38 Cities:
+
+### Djibouti - 38 Cities:
 
 The best solution is (6660.8366) KM for the TSP journey with a total execution time - for 5 repetitions, equals to 0 seconds.
 
@@ -57,7 +57,7 @@ The best solution is (6660.8366) KM for the TSP journey with a total execution t
 	++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
-	### 2. Qatar - 194 Cities:
+### Qatar - 194 Cities:
 In this case, I have tweaked the learning rate (a) and both initial and stopping temperatures, hence the best solution is (9832.537) KM for the TSP journey with a total execution time - for 5 repetitions, equals to 244 seconds.
 	
 	.............................................
