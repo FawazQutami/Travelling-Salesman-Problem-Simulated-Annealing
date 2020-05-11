@@ -1,3 +1,13 @@
+"""
+-- *********************************************
+-- Author       :	Fawaz Qutami
+-- Create date  :   10th May 2020
+-- Description  :   Metaheuristics
+-- File Name    :   eHandler.py
+-- *********************************************
+"""
+
+# load Packages
 import linecache
 import sys
 
