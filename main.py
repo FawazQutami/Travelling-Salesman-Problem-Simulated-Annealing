@@ -1,9 +1,74 @@
+"""
+-- *********************************************
+-- Author       :	Fawaz Qutami
+-- Create date  :   10th May 2020
+-- Description  :   Metaheuristics
+-- File Name    :   main.py
+-- *********************************************
+"""
+
+# load Packages
 import argparse
 import datetime as dt
 import numpy as np
+import subprocess
+import sys
+
+# load other packages
 from eHandler import PrintException as EH
 from SA_Plot import animateTSP, plotLearning
 from SA import SimulatedAnnealing as sa
+
+marks = '==' * 30 + '\n'
+
+
+def install_required_Packages():
+    """
+    Install the required PACKAGES
+    :return: Nothing
+    """
+
+    try:
+        # List all the required packages
+        required_packages = [
+            'matplotlib',
+            'basemap',
+            'numpy',
+        ]
+
+        # Check and retrieve the installed packages info
+        installed = subprocess.check_output(
+            [
+                sys.executable
+                ,'-m'
+                ,'pip'
+                ,'freeze'
+            ]
+        )
+        # Split and strip the returned info to get the
+        # installed packages names list
+        installed_packages = [r.decode().split('==')[0]
+                              for r in installed.split()]
+        # Loop over the required packages
+        for package in required_packages:
+            # If the package is not in the installed packages
+            if package not in installed_packages:
+                # print informative message
+                print(marks)
+                print("Installing {}! Please wait ...")
+                print(marks)
+                # Send a check call and install the package
+                subprocess.check_call(
+                    [
+                        sys.executable
+                        ,"-m"
+                        ,"pip"
+                        ,"install"
+                        ,package
+                    ]
+                )
+
+    except:EH()
 
 
 def coordinates(fileName):
@@ -132,4 +197,10 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        # Install Required packages
+        install_required_Packages()
+        main()
+
+    except:
+        EH()
