@@ -1,7 +1,7 @@
 # Travelling Salesman Problem - TSP:
 “Given a list of cities and the distances between each pair of cities, what is the shortest possible route that visits each city and returns to the origin city?”
-I have chosen Simulated Annealing Algorithm to solve the TSP, because it has some parameters in which I can tweak to reach a reasonable solution - the goal of simulated annealing is to minimize the energy of a system (minimizing a cost function). 
 
+I have chosen Simulated Annealing Algorithm to solve the TSP, because it has some parameters in which I can tweak to reach a reasonable solution - the goal of simulated annealing is to minimize the energy of a system (minimizing a cost function). 
 # Simulated Annealing Algorithm in brief:
 	1. Start from an initial solution, then at each iteration we generate a slightly different solution. 
 	2. If the iteration is better, then we accept it. Otherwise, we accept it with a probability of metropolis.
@@ -31,6 +31,7 @@ In both cases, I have repeated the simulated annealing 5 times to produce the be
 	1. Djibouti - 38 Cities:
 
 The best solution is (6660.8366) KM for the TSP journey with a total execution time - for 5 repetitions, equals to 0 seconds.
+
 	.............................................
 	Starting Annealing ...
 	Total Execution Time in seconds: 0
@@ -57,6 +58,7 @@ The best solution is (6660.8366) KM for the TSP journey with a total execution t
 
 	2. Qatar - 194 Cities:
 In this case, I have tweaked the learning rate (a) and both initial and stopping temperatures, hence the best solution is (9832.537) KM for the TSP journey with a total execution time - for 5 repetitions, equals to 244 seconds.
+	
 	.............................................
 	Starting Annealing ...
 	Total Execution Time in seconds: 244
