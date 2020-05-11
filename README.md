@@ -31,7 +31,6 @@ In our case I used “Djibouti - 38 Cities” and “Qatar - 194 Cities” from http://w
 In both cases, I have repeated the simulated annealing 5 times to produce the best solution by using the same parameters at each repetition. 
 
 ### Djibouti - 38 Cities:
-
 The best solution is (6660.8366) KM for the TSP journey with a total execution time - for 5 repetitions, equals to 0 seconds.
 
 	.............................................
@@ -56,7 +55,6 @@ The best solution is (6660.8366) KM for the TSP journey with a total execution t
 	 Annealing improvement over Greedy   : 18.400%
 	 Annealing Execution Time in seconds : 0
 	++++++++++++++++++++++++++++++++++++++++++++++++++
-
 
 ### Qatar - 194 Cities:
 In this case, I have tweaked the learning rate (a) and both initial and stopping temperatures, hence the best solution is (9832.537) KM for the TSP journey with a total execution time - for 5 repetitions, equals to 244 seconds.
@@ -83,3 +81,10 @@ In this case, I have tweaked the learning rate (a) and both initial and stopping
 	 Annealing improvement over Greedy   : 14.900%
 	 Annealing Execution Time in seconds : 49
 	++++++++++++++++++++++++++++++++++++++++++++++++++
+	
+# Code written in Python. 
+To start the execution open main.py file and then excute. You may need the below libraries:
+ 1. numpy
+ 2. matplotlib
+ 3. basemap
+ 
