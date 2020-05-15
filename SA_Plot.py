@@ -17,9 +17,17 @@ from eHandler import PrintException as EH
 
 
 def plotLearning(fitnessList, initFit, bestFit):
-    """"""
+    """
+
+    :param fitnessList: list[float]
+    :param initFit: float
+    :param bestFit: float
+    :return: None
+    """
     try:
         plt.figure(figsize=(10, 5))
+        plt.grid('on')
+        plt.rc('axes', axisbelow=True)
         plt.plot([i for i in range(len(fitnessList))]
                  , fitnessList)
         line_init = plt.axhline(y=initFit
@@ -39,13 +47,18 @@ def plotLearning(fitnessList, initFit, bestFit):
 
 
 def animateTSP(country, history, points):
-    """"""
+    """
+
+    :param country: string
+    :param history: list[int, float, float]
+    :param points: list[int, float, float]
+    :return:
+    """
     try:
+        # Prepare the coordinates for plotting the trip
         cityName = []
         latitude = []
         longitude = []
-
-        # Prepare the coordinates for plotting the trip
         for city in points:
             cityName.append(city[0])
             latitude.append(city[1]/1000.)
@@ -74,7 +87,6 @@ def animateTSP(country, history, points):
                               , lon_0=51.534817
                               )
 
-
         tripMap.drawmapboundary(fill_color = 'aqua')
         tripMap.fillcontinents(color = '#FFE4B5', lake_color = 'aqua')
         tripMap.drawcoastlines()
@@ -90,7 +102,7 @@ def animateTSP(country, history, points):
                         ,markersize=3
                         ,linewidth=1
                         ,color='r')[0]
-
+        # initial function
         def init_func():
             # Draw node dots on graph
             x = [longitude[i] for i in history[0]]
@@ -102,7 +114,7 @@ def animateTSP(country, history, points):
             line.set_data([], [])
 
             return line,
-
+        # animate function
         def gen_function(frame):
             # Update the graph for each frame
             x = [longitude[i] for i in history[frame] + [history[frame][0]]]
