@@ -128,7 +128,7 @@ class SimulatedAnnealing():
             # Initial Annealing best fitness:
             self.bestFitness = self.currentFitness
             # Save all fitness values in a list
-            self.fitnessList = [self.currentFitness]
+            self.fitnessList = [self.bestFitness]
             # record the execution Time
             self.executionTime =0
 
@@ -246,8 +246,8 @@ class SimulatedAnnealing():
                 # Increase the iteration
                 self.iteration += 1
                 # Add the value the fitness list and solution list:
-                self.fitnessList.append(self.currentFitness)
-                self.solutions.append(self.currentDistance)
+                self.fitnessList.append(self.bestFitness)
+                self.solutions.append(self.bestDistance)
 
                 end = dt.datetime.now()  # time.time()
                 self.executionTime = (end - start).seconds
