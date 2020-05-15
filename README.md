@@ -90,7 +90,11 @@ In this case, I have tweaked the learning rate (a) and both initial and stopping
 
 ![Best Route](/images/qa_routeCurve.png)
 	
-# Code written in Python. 
+# Code written in Python.
+This code favors readability and ease of understanding over speed and robustness 
+and is meant to be used as either a research tool or a study guide for anyone 
+intrested in learning about particle Simulated Annealing optimization.  
+ 
 To start the execution open main.py file and then run the program.
 You need the below libraries:
 
