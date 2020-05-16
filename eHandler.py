@@ -16,7 +16,7 @@ marks = '==' * 30 + '\n'
 
 def PrintException():
     """ Exception Handling
-    :return: string message about exception type and location)
+    :return: string message about exception type and location
     """
 
     # Get the exception objects from the system
