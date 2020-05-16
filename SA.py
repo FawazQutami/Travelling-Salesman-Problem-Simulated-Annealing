@@ -2,7 +2,7 @@
 -- *********************************************
 -- Author       :	Fawaz Qutami
 -- Create date  :   10th May 2020
--- Description  :   Metaheuristics
+-- Description  :   Metaheuristics - Simulated Annealing 2 opt
 -- File Name    :   SA.py
 -- *********************************************
 """
