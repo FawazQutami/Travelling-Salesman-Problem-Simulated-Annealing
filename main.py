@@ -108,7 +108,7 @@ def repeatSA(repetition, Nodes):
             end = dt.datetime.now()
             _totalExecutionTime += (end - start).seconds
 
-        print(f'Total Execution Time in seconds: {_totalExecutionTime}')
+        print(f'Total Execution Time in seconds (repetitions: 25): {_totalExecutionTime}')
 
         # Sort the resulted array:
         sortedList = sorted(_results, key=lambda sa: sa.bestFitness)
