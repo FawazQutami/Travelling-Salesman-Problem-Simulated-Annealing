@@ -25,7 +25,7 @@ I have chosen Simulated Annealing Algorithm to solve the TSP, because it has som
 Something worth mentioning is that we decrease the temperature at each iteration, by multiplying the temperature by a rate (known as Cooling Schedule).
 Also, in the case of decreasing the learning rate, one should consider reducing the initial and stopping temperature, as well as stopping iteration, to fine-tune the result.
 
-## Study cases: 
+## Study cases 
 In our case I used “Djibouti - 38 Cities” and “Qatar - 194 Cities” from http://www.math.uwaterloo.ca/tsp/world/countries.html.
 
 In both cases, I have repeated the simulated annealing 5 times to produce the best solution by using the same parameters at each repetition. 
@@ -90,7 +90,7 @@ In this case, I have tweaked the learning rate (a) and both initial and stopping
 
 ![Best Route](/images/qa_routeCurve.png)
 	
-# Code written in Python.
+# Code written in Python
 This code favors readability and ease of understanding over speed and robustness 
 and is meant to be used as either a research tool or a study guide for anyone 
 intrested in learning about particle Simulated Annealing optimization.  
