@@ -2,6 +2,7 @@
 “Given a list of cities and the distances between each pair of cities, what is the shortest possible route that visits each city and returns to the origin city?”
 
 I have chosen Simulated Annealing Algorithm to solve the TSP, because it has some parameters in which I can tweak to reach a reasonable solution - the goal of simulated annealing is to minimize the energy of a system (minimizing a cost function). 
+Note: [link to Genetic Algorithm!](https://github.com/FawazQutami/Genetic-Algorithm/tree/master)
 # Simulated Annealing Algorithm in brief (Discrete Optimization)
 	1. Start from an initial solution, then at each iteration we generate a slightly different solution. 
 	2. If the iteration is better, then we accept it. Otherwise, we accept it with a probability of metropolis.
