@@ -1,7 +1,8 @@
 # Travelling Salesman Problem - TSP
-ìGiven a list of cities and the distances between each pair of cities, what is the shortest possible route that visits each city and returns to the origin city?î
+‚ÄúGiven a list of cities and the distances between each pair of cities, what is the shortest possible route that visits each city and returns to the origin city?‚Äù
 
-I have chosen Simulated Annealing Algorithm to solve the TSP, because it has some parameters in which I can tweak to reach a reasonable solution - the goal of simulated annealing is to minimize the energy of a system (minimizing a cost function). 
+I have chosen Simulated Annealing Algorithm to solve the TSP, because it has some parameters in which I can tweak to reach a reasonable solution - the goal of simulated annealing is to minimize the energy of a system (minimizing a cost function).
+
 [Check this link for Genetic Algorithm!](https://github.com/FawazQutami/Genetic-Algorithm/tree/master)
 	
 # Simulated Annealing Algorithm in brief (Discrete Optimization)
@@ -28,7 +29,7 @@ Something worth mentioning is that we decrease the temperature at each iteration
 Also, in the case of decreasing the learning rate, one should consider reducing the initial and stopping temperature, as well as stopping iteration, to fine-tune the result.
 
 ## Study cases 
-In our case I used ìDjibouti - 38 Citiesî and ìQatar - 194 Citiesî from http://www.math.uwaterloo.ca/tsp/world/countries.html.
+In our case I used ‚ÄúDjibouti - 38 Cities‚Äù and ‚ÄúQatar - 194 Cities‚Äù from http://www.math.uwaterloo.ca/tsp/world/countries.html.
 
 In both cases, I have repeated the simulated annealing 5 times to produce the best solution by using the same parameters at each repetition. 
 
