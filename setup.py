@@ -25,9 +25,10 @@ def install_required_Packages():
     try:
         # List all the required packages
         required_packages = [
-            'matplotlib',
-            'basemap',
-            'numpy',
+            'matplotlib'
+            ,'basemap' # pip install -U basemap-1.2.1-cp38-cp38-win_amd64.whl
+            ,'numpy'
+            ,'matplotlib'
         ]
 
         # Check and retrieve the installed packages info
