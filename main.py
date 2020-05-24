@@ -7,17 +7,12 @@
 -- *********************************************
 """
 
-# load Packages
-import argparse
-import datetime as dt
-import numpy as np
-
-
 # load other packages
 from eHandler import PrintException as EH
 from SA_Plot import animateTSP, plotLearning
 from SA import SimulatedAnnealing as sa
 from setup import install_required_Packages
+
 
 def coordinates(fileName):
     """
@@ -150,6 +145,13 @@ if __name__ == "__main__":
     try:
         # Install Required packages
         install_required_Packages()
+
+        # load Packages
+        import argparse
+        import datetime as dt
+        import numpy as np
+
+
         main()
 
     except:
