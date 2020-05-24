@@ -10,6 +10,7 @@
 # load Packages
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
+# pip install -U basemap-1.2.1-cp38-cp38-win_amd64.whl
 from mpl_toolkits.basemap import Basemap
 
 # load other packages
