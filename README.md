@@ -5,7 +5,7 @@ I have chosen Simulated Annealing Algorithm to solve the TSP, because it has som
 
  ([Genetic Algorithm](https://github.com/FawazQutami/Genetic-Algorithm/tree/master)), as another solution!
 	
-# Simulated Annealing Algorithm in brief (Discrete Optimization)
+# Simulated Annealing Algorithm (Discrete Optimization)
 	1. Start from an initial solution, then at each iteration we generate a slightly different solution. 
 	2. If the iteration is better, then we accept it. Otherwise, we accept it with a probability of metropolis.
 	3. We repeat the iteration process until a stopping criterion is reached.
